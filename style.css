@@ -1,0 +1,104 @@
+/* Write your CSS here */
+body {
+  background: rgb(245,245,245);
+  color: black;
+  margin: 0px;
+  font-size: 15px;
+  font-family:helvetica;
+  text-align: center;
+  font-family: 'Comic Neue', cursive;
+}
+
+h1 {
+  font-family: Courier;
+  color: blue;
+  font-weight: lighter;
+  font-size: 25px;
+}
+
+h3 {
+  font-family: Courier;
+  color: pink;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+a {
+  color: pink;
+  text-decoration: none;
+}
+
+#banner {
+  text-align: center;
+  background-color: pink;
+  background-size: cover;
+  padding: 150px;
+  color: white;
+}
+
+#banner img {
+  border: 5px solid white;
+}
+
+#banner h1 {
+  font-size: 50px;
+  text-shadow: 3px 3px #4CD3C2;
+}
+
+#banner p {
+  opacity: 0.8;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #4CD3C2;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px black;
+  padding: 15px 20px;
+  color: black;
+}
+
+.btn:hover {
+  background-color: #613F75;
+  opacity: 0.8;
+  border: 2px solid white;
+}
+
+.card {
+  padding: 50px;
+  font-weight: lighter;
+  background-color: rgb(200,200,200);
+  margin: 30px
+}
+
+#footer {
+  margin-top: 15px;
+  padding: 10px 30px;
+  background: pink;
+  color: blue;
+}
+
+.cards {
+  margin: 15px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  width: 1000px;
+}
+
+/*les écrans de largeur inférieure à 992 pixels*/
+@media(max-width: 992px){
+  .cards{
+  width: 750px;
+  }
+}
+
+/*les écrans de largeur inférieure à 768 pixels*/
+@media(max-width: 768px){
+  .cards{
+  width: 90%;
+  grid-template-columns: 1fr;
+  }
+}
